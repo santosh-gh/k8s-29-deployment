@@ -356,7 +356,7 @@
 
   Then create Kubernetes secret:
 
-  k create secret docker-registry acr-helmchart-secret2 \
+  k create secret docker-registry acr-helmchart-secret \
     --namespace=flux-system \
     --docker-server=$ACR_LOGIN_SERVER \
     --docker-username=$GITHUB_USER \
@@ -433,27 +433,15 @@
   kubectl get kustomizations -n flux-system
   flux get kustomizations
 
-# Uninstall Flux
+# Verify the Deployment
+  k get pods
+  k get services
 
-# Delete Cluster
+  curl <LoadBalancer public IP>:80
+  Browse the app using http://<LoadBalancer public IP>:80
 
-kind delete cluster --name demo-cluster
-
-
-export GITHUB_USER='santosh-gh'
-
-helm registry login ghcr.io -u $GITHUB_USER --password-stdin
-
-helm package ./helmchart
-
-helm push online-store-0.1.0.tgz oci://ghcr.io/santosh-gh/online-store-charts
-
-helm pull oci://ghcr.io/santosh-gh/helm-charts/online-store --version 0.1.0
-
-helm registry login ghcr.io \
-  --username $GITHUB_USER \
-  --password $GITHUB_TOKEN
-
-helm show all oci://ghcr.io/santosh-gh/helm-charts/online-store --version 1.0.0
-
-flux logs -n flux-system | grep online-store-repo
+# Clean the k8s namespace
+  k delete all --all -n default
+  
+# Clean the Azure resources
+  az group delete --name rg-onlinestore-dev-uksouth-001 --yes --no-wait
