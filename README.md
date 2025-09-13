@@ -340,6 +340,7 @@
   GITHUB_USER='santosh-gh'
   GITHUB_TOKEN=''
 
+  az acr update -n $ACR_NAME --admin-enabled true
   az acr credential show -n $ACR_NAME
 
 
