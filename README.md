@@ -1,4 +1,4 @@
-# Part 28: Deploying microservice applications in Kubernetes using Helmchart from HelmRepository
+# Part 29: Deploying microservice applications in Kubernetes using Helmchart from HelmRepository (ACR)
 
     Part1:   Manual Deployment (AzCLI + Docker Desktop + kubectl)  
     GitHub:  https://github.com/santosh-gh/k8s-01
