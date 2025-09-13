@@ -234,8 +234,8 @@
             Deploy into multiple environments dev, test and prod
 
     GitHub:  https://github.com/santosh-gh/k8s-21-development.git     
-    GitHub:  https://github.com/santosh-gh/k8s-26-deployment.git
-    YouTube: https://www.youtube.com/watch?v=NpS63UEO3Bg&list=PLr6ErUeFySVug9VG73_W2MypRez_ZycWh&index=26 
+    GitHub:  https://github.com/santosh-gh/k8s-27-deployment.git
+    YouTube: https://www.youtube.com/watch?v=QboicrPivH4&list=PLr6ErUeFySVug9VG73_W2MypRez_ZycWh&index=27
 
     Part28: GitOps using Flux (Microservice + Flux + Helm Chart + HelmRepository(GHCR) + KinD)             
             Helm Chart with multiple Microservices
@@ -245,7 +245,7 @@
 
     GitHub:  https://github.com/santosh-gh/k8s-28-development.git     
     GitHub:  https://github.com/santosh-gh/k8s-28-deployment.git
-    YouTube: https://www.youtube.com/watch?v=NpS63UEO3Bg&list=PLr6ErUeFySVug9VG73_W2MypRez_ZycWh&index=26 
+    YouTube: https://www.youtube.com/watch?v=WTJvum3IZTU&list=PLr6ErUeFySVug9VG73_W2MypRez_ZycWh&index=28 
 
      Part29: GitOps using Flux (Microservice + Flux + Helm Chart + HelmRepository(ACR)+ AKS)             
             Helm Chart with multiple Microservices
@@ -442,6 +442,6 @@
 
 # Clean the k8s namespace
   k delete all --all -n default
-  
+
 # Clean the Azure resources
   az group delete --name rg-onlinestore-dev-uksouth-001 --yes --no-wait
