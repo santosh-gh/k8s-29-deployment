@@ -352,7 +352,9 @@
     --docker-password=$GITHUB_TOKEN \
     --docker-email=santosh.mohapatra25@gmail.com
 
-  k get secret acr-helmchart-secret -n flux-system -o yaml
+  
+
+  k get secret acr-helmchart-secret2 -n flux-system -o yaml
 
 # Build and push Docker images to ACR
 
