@@ -237,7 +237,7 @@
     GitHub:  https://github.com/santosh-gh/k8s-26-deployment.git
     YouTube: https://www.youtube.com/watch?v=NpS63UEO3Bg&list=PLr6ErUeFySVug9VG73_W2MypRez_ZycWh&index=26 
 
-    Part28: GitOps using Flux (Microservice + Flux + Helm Chart + HelmRepository)             
+    Part28: GitOps using Flux (Microservice + Flux + Helm Chart + HelmRepository(GHCR) + KinD)             
             Helm Chart with multiple Microservices
             Helm Charts in HelmRepository (GitHub Container Registry)
             OCI
@@ -246,6 +246,16 @@
     GitHub:  https://github.com/santosh-gh/k8s-28-development.git     
     GitHub:  https://github.com/santosh-gh/k8s-28-deployment.git
     YouTube: https://www.youtube.com/watch?v=NpS63UEO3Bg&list=PLr6ErUeFySVug9VG73_W2MypRez_ZycWh&index=26 
+
+     Part29: GitOps using Flux (Microservice + Flux + Helm Chart + HelmRepository(ACR)+ AKS)             
+            Helm Chart with multiple Microservices
+            Helm Charts in HelmRepository (Azure Container Registry)
+            OCI
+            Private Repository
+
+    GitHub:  https://github.com/santosh-gh/k8s-29-development.git     
+    GitHub:  https://github.com/santosh-gh/k8s-29-deployment.git
+    YouTube: https://www.youtube.com/watch?v=NpS63UEO3Bg&list=PLr6ErUeFySVug9VG73_W2MypRez_ZycWh&index=26
 
 # Architesture
 
