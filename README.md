@@ -345,7 +345,7 @@
 
   Then create Kubernetes secret:
 
-  k create secret docker-registry acr-helmchart-secret \
+  k create secret docker-registry acr-helmchart-secret2 \
     --namespace=flux-system \
     --docker-server=$ACR_LOGIN_SERVER \
     --docker-username=$GITHUB_USER \
